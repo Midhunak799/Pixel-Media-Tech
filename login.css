@@ -1,0 +1,125 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.form-container {
+    background: linear-gradient(#e7b1e5, #fadbf4, rgb(236, 174, 228));
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.form-toggle button {
+    width: 48%;
+    padding: 0.5em;
+    background: linear-gradient(#e85be1, #ed84eb, rgb(235, 136, 218));
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+.form-toggle button:hover{
+
+    background: linear-gradient(#d9cfd9, #d7c9d7, rgb(235, 136, 218));
+
+}
+
+.form-toggle button.active {
+    background-color: #0056b3;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.input-group input {
+    width: 70%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 5%;
+}
+
+button[type="submit"] {
+    width: 50%;
+    padding: 0.8em;
+    background: linear-gradient(#2fea2c, #7ae464, rgb(167, 247, 120));
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn{
+
+
+    width: 50%;
+    padding: 0.8em;
+    background: linear-gradient(#2fea2c, #7ae464, rgb(167, 247, 120));
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    height: 200px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.btn:hover{
+
+    background: linear-gradient(#dcf1db, #d75050, rgb(200, 149, 55));
+
+}
+
+
+
+button[type="submit"]:hover {
+    background: linear-gradient(#dcf1db, #d75050, rgb(200, 149, 55));
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 1em;
+    }
+}
